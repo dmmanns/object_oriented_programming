@@ -1,4 +1,9 @@
 #Question 1: Created two classes; Student, Instructor
+class Person
+	def initialize(name)
+		@name = name
+	end
+end
 
 class Student
 	def learn 
