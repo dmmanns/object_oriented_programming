@@ -7,17 +7,25 @@ class Person
 end 
     
 class Student <Person
+	def initilaize(name)
+	  @name = name
+	end	
+	
 	def learn
-     puts "I totally get it" 
+      puts "I totally get it" 
     end
 
 end
 
 class Instructor <Person
-	def teach
-     puts "Everything in Ruby is an Object"  
-    end 
+  def initialize(name)
+    @name = name
+  end  
+	
+  def teach
+    puts "Everything in Ruby is an Object"  
+  end 
 
 end
 
-name = Person.new("Chris")
+name = Person.new("Chris" "Christina")
